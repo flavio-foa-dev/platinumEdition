@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavio Andrade TI - Platinum Edition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Variáveis de Identidade Platinum */
+        :root {
+            --primary: #002D72; 
+            --accent: #FF7300;
+            --success: #2E7D32;
+            --danger: #DC3545;
+            --light: #F4F7F9;
+            --dark: #333;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; line-height: 1.6; color: var(--dark); background: var(--light); }
+        
+        /* Header & Hero */
+        header { background: var(--primary); color: white; padding: 80px 20px; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+        .hero h1 { font-size: 3.5rem; margin: 0; font-weight: 800; text-transform: uppercase; }
+        .hero p { color: var(--accent); font-size: 1.3rem; font-weight: bold; margin-bottom: 30px; }
+
+        /* Container Principal */
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+
+        /* Grid de Funcionalidades */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: -50px; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 5px solid var(--accent); transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        .card i { font-size: 50px; color: var(--primary); margin-bottom: 20px; }
+        .card h3 { color: var(--primary); margin-bottom: 15px; }
+
+        /* Seção de Laudo Técnico */
+        .report-preview { background: white; margin: 50px 0; padding: 40px; border-radius: 12px; display: flex; align-items: center; flex-wrap: wrap; gap: 30px; }
+        .report-text { flex: 1; min-width: 300px; }
+        .report-image { flex: 1; min-width: 300px; background: #eee; height: 250px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #ccc; }
+
+        /* Botões de Ação */
+        .cta-btn { background: var(--accent); color: white; padding: 18px 45px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2rem; display: inline-block; transition: 0.3s; box-shadow: 0 5px 15px rgba(255, 115, 0, 0.4); }
+        .cta-btn:hover { background: #e66700; transform: scale(1.05); }
+
+        /* Depoimentos/Confiança */
+        .trust-bar { text-align: center; padding: 40px 0; border-top: 1px solid #ddd; }
+        .trust-bar span { margin: 0 20px; font-weight: bold; color: #777; font-size: 0.9rem; }
+
+        /* Rodapé */
+        footer { background: var(--primary); color: white; padding: 50px 20px; text-align: center; }
+        .footer-contacts { margin-bottom: 20px; }
+        .footer-contacts a { color: white; text-decoration: none; margin: 0 15px; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Platinum Edition v12.0</h1>
+            <p>A ferramenta definitiva para Técnicos de Elite</p>
+            <a href="https://wa.me/5522992653615" class="cta-btn">ADQUIRIR SISTEMA AGORA</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="features">
+            <div class="card">
+                <i class="fas fa-tools"></i>
+                <h3>Reparo Profissional</h3>
+                <p>Automatize SFC, DISM e limpeza WinSxS com um clique. Recupere o sistema sem formatar.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Máxima Performance</h3>
+                <p>Ative o Modo Turbo e planos de energia extrema. Otimize o Kernel para Gamers e Profissionais.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Ponto de Restauração</h3>
+                <p>Criação automática de pontos de segurança antes de qualquer modificação profunda.</p>
+            </div>
+        </div>
+
+        <section class="report-preview">
+            <div class="report-text">
+                <h2>📊 Gere Laudos Profissionais</h2>
+                <p>Diferencie-se da concorrência enviando um relatório HTML detalhado para seu cliente. Mostre a saúde do disco (S.M.A.R.T), temperatura e todas as ações realizadas.</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li><i class="fas fa-check-circle" style="color:var(--success)"></i> Saúde de SSD/HD e Temperatura</li>
+                    <li><i class="fas fa-check-circle" style="color:var(--success)"></i> Histórico de ações detalhado</li>
+                    <li><i class="fas fa-check-circle" style="color:var(--success)"></i> Design elegante e pronto para PDF</li>
+                </ul>
+            </div>
+            <div class="report-image">
+                <p style="color:#777">[Espaço para Print do seu Relatório HTML]</p>
+            </div>
+        </section>
+
+        <div class="trust-bar">
+            <span>MODO RESIDENCIAL</span>
+            <span>MODO EMPRESARIAL</span>
+            <span>MODO GAMER</span>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-contacts">
+                <p><strong>Especialista: Flavio Andrade</strong></p>
+                <a href="tel:22992653615"><i class="fas fa-phone"></i> (22) 99265-3615</a>
+                <a href="https://wa.me/5522992653615"><i class="fab fa-whatsapp"></i> Suporte Platinum</a>
+            </div>
+            <p>© 2026 Platinum Edition. Desenvolvido para técnicos que buscam excelência.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
