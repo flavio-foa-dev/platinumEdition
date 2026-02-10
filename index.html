@@ -3,116 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flavio Andrade TI - Platinum Edition</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Resolva TI | Outsourcing de Equipamentos</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    
     <style>
-        /* Variáveis de Identidade Platinum */
-        :root {
-            --primary: #002D72; 
-            --accent: #FF7300;
-            --success: #2E7D32;
-            --danger: #DC3545;
-            --light: #F4F7F9;
-            --dark: #333;
+        body { font-family: 'Montserrat', sans-serif; }
+        
+        /* Efeito de zoom suave na imagem que o Tailwind complementa */
+        .group:hover .group-hover\:scale-110 {
+            transform: scale(1.1);
         }
 
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; line-height: 1.6; color: var(--dark); background: var(--light); }
-        
-        /* Header & Hero */
-        header { background: var(--primary); color: white; padding: 80px 20px; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
-        .hero h1 { font-size: 3.5rem; margin: 0; font-weight: 800; text-transform: uppercase; }
-        .hero p { color: var(--accent); font-size: 1.3rem; font-weight: bold; margin-bottom: 30px; }
-
-        /* Container Principal */
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-
-        /* Grid de Funcionalidades */
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: -50px; }
-        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 5px solid var(--accent); transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); }
-        .card i { font-size: 50px; color: var(--primary); margin-bottom: 20px; }
-        .card h3 { color: var(--primary); margin-bottom: 15px; }
-
-        /* Seção de Laudo Técnico */
-        .report-preview { background: white; margin: 50px 0; padding: 40px; border-radius: 12px; display: flex; align-items: center; flex-wrap: wrap; gap: 30px; }
-        .report-text { flex: 1; min-width: 300px; }
-        .report-image { flex: 1; min-width: 300px; background: #eee; height: 250px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #ccc; }
-
-        /* Botões de Ação */
-        .cta-btn { background: var(--accent); color: white; padding: 18px 45px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2rem; display: inline-block; transition: 0.3s; box-shadow: 0 5px 15px rgba(255, 115, 0, 0.4); }
-        .cta-btn:hover { background: #e66700; transform: scale(1.05); }
-
-        /* Depoimentos/Confiança */
-        .trust-bar { text-align: center; padding: 40px 0; border-top: 1px solid #ddd; }
-        .trust-bar span { margin: 0 20px; font-weight: bold; color: #777; font-size: 0.9rem; }
-
-        /* Rodapé */
-        footer { background: var(--primary); color: white; padding: 50px 20px; text-align: center; }
-        .footer-contacts { margin-bottom: 20px; }
-        .footer-contacts a { color: white; text-decoration: none; margin: 0 15px; font-size: 1.1rem; }
+        /* Garantir que o card mantenha altura mesmo sem imagem */
+        .img-placeholder {
+            background-image: linear-gradient(45deg, #f3f4f6 25%, transparent 25%, transparent 50%, #f3f4f6 50%, #f3f4f6 75%, transparent 75%, transparent);
+            background-size: 20px 20px;
+        }
     </style>
 </head>
-<body>
+<body class="bg-[#ebebeb] text-gray-800 antialiased">
 
-    <header class="hero">
-        <div class="container">
-            <h1>Platinum Edition v12.0</h1>
-            <p>A ferramenta definitiva para Técnicos de Elite</p>
-            <a href="https://wa.me/5522992653615" class="cta-btn">ADQUIRIR SISTEMA AGORA</a>
-        </div>
+    <header class="bg-[#003580] sticky top-0 z-50 shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="logo">
+                <h1 class="text-white text-2xl font-extrabold tracking-tighter">
+                    resolva<span class="text-[#f57c00] uppercase">ti</span>
+                </h1>
+            </div>
+            
+            <ul class="hidden md:flex space-x-8 text-white text-sm font-semibold">
+                <li><a href="#" class="hover:text-[#f57c00] transition-colors">Home</a></li>
+                <li><a href="#equipamentos" class="hover:text-[#f57c00] transition-colors">Equipamentos</a></li>
+                <li><a href="#" class="hover:text-[#f57c00] transition-colors">Sobre Nós</a></li>
+                <li><a href="#" class="bg-[#f57c00] px-4 py-2 rounded-md hover:bg-orange-600 transition-all">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <div class="features">
-            <div class="card">
-                <i class="fas fa-tools"></i>
-                <h3>Reparo Profissional</h3>
-                <p>Automatize SFC, DISM e limpeza WinSxS com um clique. Recupere o sistema sem formatar.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-tachometer-alt"></i>
-                <h3>Máxima Performance</h3>
-                <p>Ative o Modo Turbo e planos de energia extrema. Otimize o Kernel para Gamers e Profissionais.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Ponto de Restauração</h3>
-                <p>Criação automática de pontos de segurança antes de qualquer modificação profunda.</p>
-            </div>
+    <section class="bg-[#003580] text-white py-12 px-4 border-t border-blue-900">
+        <div class="max-w-7xl mx-auto text-center md:text-left">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-2">Sua infraestrutura em boas mãos.</h2>
+            <p class="text-blue-100 text-lg opacity-90">Locação de hardware e suporte especializado com padrão de excelência.</p>
         </div>
+    </section>
 
-        <section class="report-preview">
-            <div class="report-text">
-                <h2>📊 Gere Laudos Profissionais</h2>
-                <p>Diferencie-se da concorrência enviando um relatório HTML detalhado para seu cliente. Mostre a saúde do disco (S.M.A.R.T), temperatura e todas as ações realizadas.</p>
-                <ul style="list-style: none; padding: 0;">
-                    <li><i class="fas fa-check-circle" style="color:var(--success)"></i> Saúde de SSD/HD e Temperatura</li>
-                    <li><i class="fas fa-check-circle" style="color:var(--success)"></i> Histórico de ações detalhado</li>
-                    <li><i class="fas fa-check-circle" style="color:var(--success)"></i> Design elegante e pronto para PDF</li>
-                </ul>
-            </div>
-            <div class="report-image">
-                <p style="color:#777">[Espaço para Print do seu Relatório HTML]</p>
-            </div>
-        </section>
+    <main class="max-w-7xl mx-auto py-10 px-4">
+    <h2 class="text-xl font-bold mb-6 text-gray-700 flex items-center">
+        <span class="w-1 h-6 bg-[#f57c00] mr-3"></span>
+        Equipamentos em Destaque
+    </h2>
 
-        <div class="trust-bar">
-            <span>MODO RESIDENCIAL</span>
-            <span>MODO EMPRESARIAL</span>
-            <span>MODO GAMER</span>
+    <div class="relative group mb-8">
+        <input 
+            type="text" id="input-busca" 
+            placeholder="Buscar impressora, marca ou categoria..." 
+            class="w-full p-4 pl-12 rounded-lg border border-gray-300 shadow-sm focus:ring-2 focus:ring-[#003580] focus:border-transparent outline-none transition-all"
+        >
+        <div class="absolute left-4 top-4 text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
         </div>
     </div>
+        
 
-    <footer>
-        <div class="container">
-            <div class="footer-contacts">
-                <p><strong>Especialista: Flavio Andrade</strong></p>
-                <a href="tel:22992653615"><i class="fas fa-phone"></i> (22) 99265-3615</a>
-                <a href="https://wa.me/5522992653615"><i class="fab fa-whatsapp"></i> Suporte Platinum</a>
-            </div>
-            <p>© 2026 Platinum Edition. Desenvolvido para técnicos que buscam excelência.</p>
+        <div id="lista-equipamentos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- <div class="animate-pulse bg-white rounded-lg h-80 shadow-sm"></div>
+            <div class="animate-pulse bg-white rounded-lg h-80 shadow-sm hidden sm:block"></div>
+            <div class="animate-pulse bg-white rounded-lg h-80 shadow-sm hidden md:block"></div>
+            <div class="animate-pulse bg-white rounded-lg h-80 shadow-sm hidden lg:block"></div> -->
         </div>
-    </footer>
+    </main>
 
+    <footer class="bg-white border-t border-gray-200 pt-16 pb-8 mt-20">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-2xl font-black text-[#003580] tracking-tighter">resolva<span class="text-[#f57c00]">TI</span></h2>
+                    <p class="text-xs text-gray-400 mt-1 uppercase tracking-widest font-bold">Soluções em Impressão</p>
+                </div>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-500 hover:text-[#003580] text-sm transition-colors">Sobre a resolvaTI</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-[#003580] text-sm transition-colors">Locação de Impressoras</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-[#003580] text-sm transition-colors">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wider mb-6">Contatos</h3>
+                <ul class="space-y-4 text-sm text-gray-500">
+                    <li class="flex items-start">
+                        <span class="text-[#003580] mr-3"><i class="fas fa-phone"></i></span>
+                        <span>(22) 99999-9999<br><span class="text-[10px] text-gray-400 font-bold uppercase">Televendas</span></span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#003580] mr-3"><i class="fas fa-envelope"></i></span>
+                        <span>contato@resolvati.com.br</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#003580] mr-3"><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Araruama, RJ - Região dos Lagos</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wider mb-6">Pagamento</h3>
+                <div class="flex flex-wrap gap-2">
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" class="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity" alt="Visa">
+                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" class="h-8 w-auto opacity-80 hover:opacity-100" alt="Mastercard">
+                    <img src="https://img.icons8.com/color/48/000000/pix.png" class="h-8 w-auto opacity-80 hover:opacity-100" alt="Pix">
+                </div>
+                <p class="text-[10px] text-gray-400 mt-4 font-medium uppercase tracking-tighter">Parcelamento em até 10x no cartão</p>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wider mb-6">Segurança</h3>
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center border border-gray-100 p-2 rounded-md w-fit">
+                        <img src="https://img.icons8.com/color/48/000000/shield.png" class="h-8 mr-3" alt="Segurança">
+                        <div class="text-[10px] text-gray-500 leading-tight">
+                            <strong class="text-gray-700 block">SITE SEGURO</strong>
+                            Ambiente monitorado e criptografado
+                        </div>
+                    </div>
+                    <div class="flex items-center border border-gray-100 p-2 rounded-md w-fit">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="h-8 mr-3" alt="Google">
+                        <div class="text-[10px] text-gray-500 leading-tight">
+                            <strong class="text-gray-700 block">GOOGLE RATING</strong>
+                            Avaliação 5 estrelas
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-400 font-bold uppercase tracking-widest text-center md:text-left">
+            <p>© 2026 resolvaTI - CNPJ 00.000.000/0001-00</p>
+            <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                <span>Região dos Lagos</span>
+                <span class="text-gray-200">|</span>
+                <span class="hover:text-[#003580] cursor-pointer transition-colors">Desenvolvido por resolvaTI</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

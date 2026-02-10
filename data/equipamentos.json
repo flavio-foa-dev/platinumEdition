@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nome": "Multifuncional Epson EcoTank L6490",
+    "categoria": "Impressão Corporativa",
+    "preco": "280,00/mês",
+    "imagem": "https://imgs.search.brave.com/P55auJ0u6oenjIIxgiN0xXKJygBw-JW3f-10smom0EA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnpz/dC5jb20uYnIvdGh1/bWJzLzQ1LzgvM2Ev/LTk5Mzg1NzA2Mi5q/cGc",
+    "descricao": "Impressão colorida de alto rendimento com tecnologia PrecisionCore.",
+    "disponivel": true
+  },
+  {
+    "id": 2,
+    "nome": "Epson EcoTank L3250 - Multifuncional Wi-Fi",
+    "categoria": "Home Office",
+    "preco": "120,00/mês",
+    "imagem": "https://imgs.search.brave.com/dtrgp7ug1gPCty3_I26Pjv1c9Ys2JkBPuppUX5e3f00/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGlneW1hcS5jb20u/YnIvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMDYvOWFmNjVm/MmIwYTIyNGFjZGZh/ODZhYzgwNDUwN2Ew/ZjQuanBn",
+    "descricao": "Ideal para pequenos escritórios com baixo custo de impressão.",
+    "disponivel": true
+  },
+  {
+    "id": 3,
+    "nome": "Epson WorkForce Pro WF-C5890",
+    "categoria": "Impressão Corporativa",
+    "preco": "00,00/mês",
+    "imagem": "https://mediaserver.goepson.com/ImConvServlet/imconv/1fc5ddd33c376db36dfdb4a325f66c8d8f7e2923/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=WF-C5810-690x460-2",
+    "descricao": "Alta produtividade e baixo custo operacional para grupos de trabalho.",
+    "disponivel": false
+  },
+  {
+    "id": 4,
+    "nome": "Epson EcoTank M3180",
+    "categoria": "Escritório",
+    "preco": "150,00/mês",
+    "imagem": "https://imgs.search.brave.com/fIytPvt2_DM0yoJM6zf59wSljA0YUPIV3AxnANbsJ38/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YXNlcnZlci5nb2Vw/c29uLmNvbS9JbUNv/bnZTZXJ2bGV0L2lt/Y29udi9jNzdmZTg1/Mjk2YTU1YWFlZTQ0/YTA3MjVmZThkYzdl/ZGQ1NWUxMDY1LzEy/MDBXeDEyMDBIP3Vz/ZT1iYW5uZXImaHli/cmlzSWQ9QjJDJmFz/c2V0RGVzY3I9TTMx/NzBfNjkweDQ2MF8x/LWJvdGVsbGFz",
+    "descricao": "Impressão tanque de tinta com excelente fidelidade de cores.",
+    "disponivel": false
+  },
+  {
+    "id": 5,
+    "nome": "Brother Laser Monocromática DCP-L5512",
+    "categoria": "Impressão Laser",
+    "preco": "00,00/mês",
+    "imagem": "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2024/12/12/14/12/dcp-l5512dn-front.jpg",
+    "descricao": "Robusta e veloz. Perfeita para grandes volumes de documentos.",
+    "disponivel": true
+  },
+  {
+    "id": 6,
+    "nome": "HP Laser  Multifuncional",
+    "categoria": "Impressão Laser",
+    "preco": "390,00/mês",
+    "imagem": "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=500",
+    "descricao": "Scanner duplex automático e alta velocidade de saída.",
+    "disponivel": true
+  },
+  {
+    "id": 7,
+    "nome": "Estrutura de rede computadores e impressoras",
+    "categoria": "Alta Produção",
+    "preco": "00,00/mês",
+    "imagem": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500",
+    "descricao": "Processamento rápido de documentos pesados e segurança avançada.",
+    "disponivel": true
+  },
+  {
+    "id": 8,
+    "nome": "Epson WorkForce Pro WF-C878R",
+    "categoria": "Escritório Profissional",
+    "preco": "00,00/mês",
+    "imagem": "https://mediaserver.goepson.com/ImConvServlet/imconv/e2f4a59444d819cbabf69cb02500b98b96c66708/515Wx515H?use=productpictures&hybrisId=B2C&assetDescr=WF-C878R_SPT_C11CH60201",
+    "descricao": "Versátil e compacta, atende todas as necessidades de cópia e digitalização.",
+    "disponivel": false
+  },
+  {
+    "id": 9,
+    "nome": "Ricoh IM C3003 - Color Multifunction",
+    "categoria": "Workgroup",
+    "preco": "950,00/mês",
+    "imagem": "https://cdn.awsli.com.br/800x800/63/63103/produto/166354588fec165f748.jpg",
+    "descricao": "Impressão colorida A3 de nível profissional e acabamento sofisticado.",
+    "disponivel": true
+  },
+  {
+    "id": 10,
+    "nome": "Suporte Técnico Resolva TI",
+    "categoria": "Serviços",
+    "preco": "Sob Consulta",
+    "imagem": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500",
+    "descricao": "Manutenção preventiva e corretiva inclusa em todos os planos de locação.",
+    "disponivel": true
+  }
+]
