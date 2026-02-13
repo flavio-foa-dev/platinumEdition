@@ -74,5 +74,42 @@ function exibirCards(lista) {
     `).join('');
 }
 
+
+const contar = () => {
+    const contadores = document.querySelectorAll('.numero');
+    const velocidade = 150; // Ajuste para ser mais rápido ou lento
+
+    contadores.forEach(contador => {
+      const atualizarTexto = () => {
+        const alvo = +contador.getAttribute('data-target');
+        const atual = +contador.innerText;
+        const incremento = alvo / velocidade;
+
+        if (atual < alvo) {
+          contador.innerText = Math.ceil(atual + incremento);
+          setTimeout(atualizarTexto, 20);
+        } else {
+          // Formatação final: adiciona o '+' ou o 'h'
+          if(alvo === 2) {
+             contador.innerText = alvo + "h";
+          } else {
+             contador.innerText = alvo + "+";
+          }
+        }
+      };
+      atualizarTexto();
+    });
+  };
+
+  // Inicia quando a seção aparece na tela
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      contar();
+      observer.disconnect(); 
+    }
+  }, { threshold: 0.5 });
+
+  observer.observe(document.querySelector('.numero'));
+
 // Garante que o script só rode quando o HTML estiver pronto
 document.addEventListener('DOMContentLoaded', carregarEquipamentos);
