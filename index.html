@@ -17,6 +17,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         body { font-family: 'Montserrat', sans-serif; }
@@ -392,96 +393,122 @@
   </div>
 </section>
 
-    <footer class="bg-white border-t border-gray-200 pt-16 pb-8 mt-20">
-    <div class="max-w-7xl mx-auto px-4">
+    <footer class="bg-[#001529] text-slate-300 pt-20 pb-10 mt-20 border-t-4 border-[#FF9800]">
+    <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             
             <div class="space-y-6">
                 <div>
-                    <h2 class="text-2xl font-black text-[#003580] tracking-tighter">resolva<span class="text-[#f57c00]">TI</span></h2>
-                    <p class="text-xs text-gray-400 mt-1 uppercase tracking-widest font-bold">Soluções em Impressão</p>
+                    <h2 class="text-3xl font-black text-white tracking-tighter italic">resolva<span class="text-[#FF9800]">TI</span></h2>
+                    <p class="text-[10px] text-blue-400 mt-1 uppercase tracking-[0.2em] font-black">Tecnologia em Outsourcing</p>
                 </div>
-                <ul class="space-y-3">
-                    <li><a href="#" class="text-gray-500 hover:text-[#003580] text-sm transition-colors">Sobre a resolvaTI</a></li>
-                    <li><a href="#" class="text-gray-500 hover:text-[#003580] text-sm transition-colors">Locação de Impressoras</a></li>
-                    <li><a href="#" class="text-gray-500 hover:text-[#003580] text-sm transition-colors">Política de Privacidade</a></li>
+                <p class="text-sm leading-relaxed text-slate-400">
+                    Líder em locação de hardware na Região dos Lagos. Focados em reduzir custos e maximizar a produtividade da sua empresa.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#FF9800] transition-all text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#FF9800] transition-all text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-black text-white uppercase tracking-widest mb-8 border-b border-white/10 pb-2 w-fit">Contatos</h3>
+                <ul class="space-y-5 text-sm">
+                    <li class="flex items-center group cursor-pointer">
+                        <div class="w-8 h-8 bg-blue-500/10 rounded flex items-center justify-center mr-3 group-hover:bg-[#FF9800] transition-colors">
+                            <i class="fas fa-phone-alt text-[#FF9800] group-hover:text-white text-xs"></i>
+                        </div>
+                        <div>
+                            <span class="block text-white font-bold">(22) 99999-9999</span>
+                            <span class="text-[10px] text-slate-500 uppercase font-bold">Atendimento Comercial</span>
+                        </div>
+                    </li>
+                    <li class="flex items-center group">
+                        <div class="w-8 h-8 bg-blue-500/10 rounded flex items-center justify-center mr-3 font-bold text-[#FF9800]">@</div>
+                        <span class="hover:text-white transition-colors">contato@resolvati.com.br</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-8 h-8 bg-blue-500/10 rounded flex items-center justify-center mr-3">
+                            <i class="fas fa-map-marker-alt text-[#FF9800]"></i>
+                        </div>
+                        <span class="text-slate-400">Araruama, RJ - Região dos Lagos</span>
+                    </li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wider mb-6">Contatos</h3>
-                <ul class="space-y-4 text-sm text-gray-500">
-                    <li class="flex items-start">
-                        <span class="text-[#003580] mr-3"><i class="fas fa-phone"></i></span>
-                        <span>(22) 99999-9999<br><span class="text-[10px] text-gray-400 font-bold uppercase">Televendas</span></span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#003580] mr-3"><i class="fas fa-envelope"></i></span>
-                        <span>contato@resolvati.com.br</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#003580] mr-3"><i class="fas fa-map-marker-alt"></i></span>
-                        <span>Araruama, RJ - Região dos Lagos</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wider mb-6">Pagamento</h3>
-                <div class="flex flex-wrap gap-2">
-                    <img src="https://img.icons8.com/color/48/000000/visa.png" class="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity" alt="Visa">
-                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" class="h-8 w-auto opacity-80 hover:opacity-100" alt="Mastercard">
-                    <img src="https://img.icons8.com/color/48/000000/pix.png" class="h-8 w-auto opacity-80 hover:opacity-100" alt="Pix">
+                <h3 class="text-sm font-black text-white uppercase tracking-widest mb-8 border-b border-white/10 pb-2 w-fit">Pagamento</h3>
+                <div class="grid grid-cols-3 gap-3 mb-6">
+                    <div class="bg-white/5 p-2 rounded flex items-center justify-center hover:bg-white/10 transition-colors">
+                        <img src="https://img.icons8.com/color/48/000000/visa.png" class="h-6 grayscale hover:grayscale-0 transition-all" alt="Visa">
+                    </div>
+                    <div class="bg-white/5 p-2 rounded flex items-center justify-center hover:bg-white/10 transition-colors">
+                        <img src="https://img.icons8.com/color/48/000000/mastercard.png" class="h-6 grayscale hover:grayscale-0 transition-all" alt="Mastercard">
+                    </div>
+                    <div class="bg-white/5 p-2 rounded flex items-center justify-center hover:bg-white/10 transition-colors">
+                        <img src="https://img.icons8.com/color/48/000000/pix.png" class="h-6 grayscale hover:grayscale-0 transition-all" alt="Pix">
+                    </div>
                 </div>
-                <p class="text-[10px] text-gray-400 mt-4 font-medium uppercase tracking-tighter">Parcelamento em até 10x no cartão</p>
+                <p class="text-[11px] text-blue-400 font-bold italic leading-tight">
+                    Faturamento direto para empresas e parcelamento em até 10x.
+                </p>
             </div>
 
             <div>
-                <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wider mb-6">Segurança</h3>
-                <div class="flex flex-col gap-4">
-                    <div class="flex items-center border border-gray-100 p-2 rounded-md w-fit">
-                        <img src="https://img.icons8.com/color/48/000000/shield.png" class="h-8 mr-3" alt="Segurança">
-                        <div class="text-[10px] text-gray-500 leading-tight">
-                            <strong class="text-gray-700 block">SITE SEGURO</strong>
-                            Ambiente monitorado e criptografado
+                <h3 class="text-sm font-black text-white uppercase tracking-widest mb-8 border-b border-white/10 pb-2 w-fit">Segurança</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center bg-white/5 p-3 rounded-xl border border-white/5 hover:border-blue-500/50 transition-all">
+                        <img src="https://img.icons8.com/color/48/000000/shield.png" class="h-10 mr-4" alt="Segurança">
+                        <div>
+                            <strong class="text-white text-xs block font-black uppercase">Dados Protegidos</strong>
+                            <span class="text-[10px] text-slate-500 uppercase font-bold tracking-tighter">Criptografia SSL 256-bit</span>
                         </div>
                     </div>
-                    <div class="flex items-center border border-gray-100 p-2 rounded-md w-fit">
-                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="h-8 mr-3" alt="Google">
-                        <div class="text-[10px] text-gray-500 leading-tight">
-                            <strong class="text-gray-700 block">GOOGLE RATING</strong>
-                            Avaliação 5 estrelas
+                    <div class="flex items-center bg-white/5 p-3 rounded-xl border border-white/5">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="h-10 mr-4" alt="Google">
+                        <div>
+                            <strong class="text-white text-xs block font-black uppercase">Google Rating</strong>
+                            <div class="flex text-[#FF9800] text-[10px]">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="mt-16 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-400 font-bold uppercase tracking-widest text-center md:text-left">
-            <p>© 2026 resolvaTI - CNPJ 00.000.000/0001-00</p>
-            <div class="flex items-center space-x-4 mt-4 md:mt-0">
-                <span>Região dos Lagos</span>
-                <span class="text-gray-200">|</span>
-                <span class="hover:text-[#003580] cursor-pointer transition-colors">Desenvolvido por resolvaTI</span>
+        <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[11px] font-bold text-slate-500 uppercase tracking-widest">
+            <p>© 2026 RESOLVATI - CNPJ 00.000.000/0001-00</p>
+            <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                <span class="text-[#FF9800]">Excelência na Região dos Lagos</span>
+                <span class="text-white/20">|</span>
+                <a href="#" class="hover:text-white transition-colors underline decoration-[#FF9800] underline-offset-4">Privacidade</a>
             </div>
         </div>
     </div>
 </footer>
 
-<a href="https://wa.me/5522999999999" 
-   target="_blank" 
-   class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-[#25d366] rounded-full shadow-lg hover:bg-[#128c7e] transition-all duration-300 hover:scale-110 group">
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end pointer-events-none">
     
-    <svg xmlns="http://www.w3.org/2000/svg" 
-         viewBox="0 0 24 24" 
-         class="w-9 h-9 text-white fill-current block">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 4.754a8.962 8.962 0 01-4.435-1.178L3 19.5l1.596-4.592A8.923 8.923 0 013.464 11c0-4.959 4.03-8.99 8.991-8.99 2.403 0 4.662.935 6.359 2.634a8.945 8.945 0 012.635 6.355c0 4.959-4.03 8.99-8.995 8.99M12 0C5.373 0 0 5.373 0 12c0 2.123.55 4.118 1.511 5.861L0 24l6.335-1.652C7.994 23.413 9.942 24 12 24c6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/>
-    </svg>
+        <div class="bg-white px-4 py-2 rounded-2xl shadow-2xl mb-3 border border-slate-100 pointer-events-auto animate-bounce hidden md:block">
+            <p class="text-[11px] font-black text-slate-800 uppercase tracking-tighter">
+                <span class="text-green-500 text-lg mr-1">●</span> Suporte Online Araruama
+            </p>
+        </div>
 
-    <span class="absolute right-20 bg-gray-800 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap uppercase tracking-widest font-bold">
-        Atendimento Online
-    </span>
-</a>
+        <a href="https://wa.me/5522999999999?text=Olá! Gostaria de um orçamento para minha empresa." 
+             target="_blank" 
+             class="pointer-events-auto group relative flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-[0_10px_40px_rgba(37,211,102,0.4)] transition-all duration-300 hover:scale-110 hover:rotate-12">
+            
+            <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75 animate-ping"></span>
+            
+            <i class="fab fa-whatsapp text-3xl relative z-10"></i>
+            
+            <span class="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full border-2 border-white">
+                1
+            </span>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
